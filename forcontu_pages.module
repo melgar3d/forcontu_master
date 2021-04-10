@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+ /**
+  * implantation hook_help
+  */
+
+function forcontu_pages_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+      case 'entity.node.edit_form':
+        $node = $route_match->getParameter('node');
+
+        $output = '';
+        $output .= '<p>' . t('Text A. This text is shown in every node edit form.
+        Current node`s title is %title, and its type is %type and its id is %id', ['%title' => $node->getTitle(), '%type' => $node->getType(),
+        '%id' => $node->id()]) . '</p>';
+
+       
+
+        if ($node->getType() == 'page') {
+            $output .= '<p>' . t('Text B. This text is shown only in Basic pages nodes.') . '</p>';
+        }
+        
+        return $output;
+      
+      case 'node.add':
+        $output = '';
+        $output .= '<p>' . t('Text A.') . '</p>';
+
+        return $output;
+      
+      case 'entity.user.canonical':
+        $user = $route_match->getParameter('user');
+
+        $output = '';
+        //$output .= '<p>' . t('Text C. This text is show in the user pages. The user is') . '</p>';
+
+        $output .= '<p>' . t('Text C. This text is show in the user pages. The user is "%usuario"', ['%usuario' => $user->getAccountName()]) 
+                     . t(' y su id es "%id"', ['%id' => $user->id()]) . '</p>';
+
+        if ($user->id() == 1) {
+          $output .= '<p>' . t('Text D. Correspondiente al usuario 1') . '</p>';
+        }
+        
+        return $output;
+          
+  }
+}
+
+/**
+ * Implements hook_toolbar_alter().
+ */
+function forcontu_pages_toolbar_alter(&$items) {
+  $items['administration']['#attached']['library'][] =
+    'forcontu_pages/forcontu_pages.css';
+}

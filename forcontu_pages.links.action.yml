@@ -1,0 +1,10 @@
+forcontu_pages.action1:
+  route_name: forcontu_pages.action1
+  title: 'Add Something link 1'
+  appears_on:
+    - forcontu_pages.links
+forcontu_pages.action2:
+  route_name: forcontu_pages.action2
+  title: 'Add Something link 2'
+  appears_on:
+    - dblog.overview

@@ -1,0 +1,35 @@
+forcontu_pages.tab1:
+  route_name: forcontu_pages.tab1
+  title: Tab 1
+  base_route: forcontu_pages.tab1
+  weight: 10
+
+forcontu_pages.tab2:
+  route_name: forcontu_pages.tab2
+  title: Tab 2
+  base_route: forcontu_pages.tab1
+  weight: 20
+
+forcontu_pages.tab3:
+  route_name: forcontu_pages.tab3
+  title: Tab 3
+  base_route: forcontu_pages.tab1
+  weight: 30
+
+forcontu_pages.tab3a:
+  route_name: forcontu_pages.tab3a
+  title: Tab 3a
+  parent_id: forcontu_pages.tab3
+  weight: 10
+
+forcontu_pages.tab3b:
+  route_name: forcontu_pages.tab3b
+  title: Tab 3b
+  parent_id: forcontu_pages.tab3
+  weight: 20
+
+forcontu_pages.extratab:
+  route_name: forcontu_pages.extratab
+  title: Extra Tab
+  base_route: system.admin_content
+  weight: 10

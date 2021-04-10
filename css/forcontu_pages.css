@@ -1,0 +1,9 @@
+a .toolbar-icon-forcontu-pages-admin-forcontu {
+    border: solid 3pc red;
+}
+
+.toolbar-icon-forcontu-pages-admin-forcontu:before,
+.toolbar-icon-forcontu-pages-admin-forcontu:active:before,
+.toolbar-icon-forcontu-pages-admin-forcontu.is-active:before {
+    background-image: url(images/forcontu-icon.svg);
+}

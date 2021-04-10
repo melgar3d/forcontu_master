@@ -1,0 +1,58 @@
+forcontu_pages.admin_forcontu:
+  title: 'Forcontu'
+  parent: system.admin
+  route_name: forcontu_pages.admin_forcontu
+  description: 'Links to pages created during this course'
+  weight: 11
+forcontu_pages.admin_forcontu_pages:
+  title: 'Forcontu Pages'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.admin_forcontu_pages
+  description: 'Activities from Forcontu Pages module'
+forcontu_pages.simple:
+  title: 'Pages simple'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.simple
+  description: 'Simple page'
+forcontu_pages.links:
+  title: 'Links'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.links
+  description: 'Links Forcontu'
+forcontu_pages.calculator:
+  title: 'Calculator'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.calculator
+  route_parameters:
+    num1: 14
+    num2: 7
+  description: 'Calculator page'
+  weight: 3
+forcontu_pages.user:
+  title: 'User'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.user
+  route_parameters:
+    user: 1
+  description: 'User Page'
+  weight: 4
+forcontu_pages.node:
+  title: 'Node'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.node
+  route_parameters:
+    node: 1
+  descriptcion: 'Node Page'
+  weight: 5
+forcontu_pages.tabs:
+  title: 'Tabs'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.tab1
+  description: 'Tabs'
+  weight: 6
+forcontu_pages.extratab:
+  title: 'Extra Tabs'
+  parent: forcontu_pages.admin_forcontu
+  route_name: forcontu_pages.extratab
+  description: 'Extra Tabs'
+  weight: 7

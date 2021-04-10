@@ -1,0 +1,5 @@
+name: Forcontu Pages
+type: module
+description: 'Module about types of routes'
+package: Forcontu
+core_version_requirement: ^9

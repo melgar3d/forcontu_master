@@ -1,0 +1,5 @@
+forcontu_pages.css:
+  version: 1.x
+  css:
+    theme:
+      css/forcontu_pages.css: {}
